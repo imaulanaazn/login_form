@@ -68,6 +68,10 @@
     transition: .5s ease all;
   }
 
+  form-group input:-internal-autofill-selected{
+    background-color: white;
+  }
+
   .form-group label{
     cursor: text;
   }
