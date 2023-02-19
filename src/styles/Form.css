@@ -26,7 +26,7 @@
     padding: 80px 45px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: white;
-    border-radius: 5px;
+    border-radius: var(--radius-xs);
   }
   
   .form-title {
@@ -40,7 +40,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
   
   label {
@@ -61,15 +61,11 @@
     padding: 0 15px;
     border: none;
     color: var(--light-gray);
-    background-color: #F7F5F7;
+    background-color: #f4f4f4;
     border: 1px solid white;
-    border-radius: 3px;
+    border-radius: var(--radius-xs);
     outline: none;
     transition: .5s ease all;
-  }
-
-  .form-group input:-internal-autofill-selected{
-    background-color: white !important;
   }
 
   .form-group label{
@@ -93,20 +89,19 @@
     top: 0%;
     left: 6px;
     padding: 0 4px;
-    color: var(--light-gray);
+    color: #777;
     font-size: 13px;
-    background-color: white;
   }
   
   .form-group input.filled:focus ~ label,
   .form-group select.filled:focus ~ label {
-    background-color: white;
     color: var(--dark-blue);
 }
 
 input:focus,
 select:focus {
     border: 1px solid var(--dark-blue);
+    background-color: white;
   }
   
   .password-input {
@@ -130,6 +125,7 @@ select:focus {
     border-radius: var(--radius-xs);
     background-color: var(--dark-blue);
     padding: 10px;
+    margin-top: 20px;
     color: white;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
