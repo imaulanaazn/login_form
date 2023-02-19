@@ -4,7 +4,7 @@ import { Route } from "react-router";
 import "./index.css";
 import Home from "./pages/Home";
 import Form from "./pages/Form";
-import PaginationTable from "./pages/PaginationForm";
+import PaginationTable from "./pages/PaginationTable";
 
 const App = () => {
    return (
