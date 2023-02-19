@@ -31,7 +31,7 @@
   
   .form-title {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
     color: #222;
     margin: 0 0 35px;
   }
@@ -120,7 +120,7 @@ select:focus {
     width: 100%;
     height: 46px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     border: none;
     border-radius: var(--radius-xs);
     background-color: var(--dark-blue);
