@@ -8,6 +8,7 @@ export default function Home() {
     <ul className='cases'>
         <li><Link to="/form">login form</Link></li>
         <li><Link to="/pagination-table">Table with pagination</Link></li>
+        <li><Link to="/payment">payment</Link></li>
     </ul>   
     </div>
   )

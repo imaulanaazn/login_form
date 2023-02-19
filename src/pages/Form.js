@@ -35,7 +35,7 @@ const Form = () => {
   };
   return (
     <>
-      <div className="container">
+      <div className="form-container">
       <ToastContainer 
       position="top-center"
       autoClose={5000}

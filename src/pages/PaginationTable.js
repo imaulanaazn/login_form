@@ -43,7 +43,7 @@ const PaginationTable = () => {
   }
 
   return (
-    <div>
+    <div className="pagination-table-container">
       <table>
         <thead>
           <tr>
