@@ -68,7 +68,7 @@
     transition: .5s ease all;
   }
 
-  form-group input:-internal-autofill-selected{
+  .form-group input:-internal-autofill-selected{
     background-color: white;
   }
 
