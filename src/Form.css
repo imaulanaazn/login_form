@@ -57,7 +57,7 @@
   input,
   select {
     width: -webkit-fill-available;
-    height: 46px;
+    height: 50px;
     padding: 0 15px;
     border: none;
     color: var(--light-gray);
@@ -69,7 +69,7 @@
   }
 
   .form-group input:-internal-autofill-selected{
-    background-color: white;
+    background-color: white !important;
   }
 
   .form-group label{
