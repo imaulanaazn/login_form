@@ -1,0 +1,137 @@
+:root {
+    --dark-blue: #4D7EDF;
+    --extra-light-gray: #bbb;
+    --light-gray: rgb(77, 70, 70);
+    --radius-xs: 4px;
+  }
+  * {
+    font-family: "Poppins", sans-serif;
+  }
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 80px 45px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin: 0 0 35px;
+  }
+  
+  .form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+  }
+  
+  label {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 22px;
+    font-size: 15px;
+    color: var(--light-gray);
+    margin-bottom: 5px;
+    transition: 0.15s ease-out all;
+  }
+  
+  input,
+  select {
+    width: -webkit-fill-available;
+    height: 46px;
+    padding: 0 15px;
+    border: none;
+    color: var(--light-gray);
+    background-color: #F7F5F7;
+    border: 1px solid white;
+    outline: none;
+    transition: .5s ease all;
+  }
+  
+  .form-group select:focus ~ label,
+  .form-group input:valid ~ label,
+  .form-group input:focus ~ label {
+    padding: 0 5px;
+    top: 0%;
+    left: 6px;
+    color: var(--dark-blue);
+    background-color: white;
+    font-size: 13px;
+}
+  
+  .form-group input.filled ~ label,
+  .form-group select.filled ~ label {
+    top: 0%;
+    left: 6px;
+    padding: 0 4px;
+    color: var(--light-gray);
+    font-size: 13px;
+    background-color: white;
+}
+
+.form-group input.filled:focus ~ label,
+.form-group select.filled:focus ~ label {
+    color: var(--dark-blue);
+}
+
+input:focus,
+select:focus {
+    border: 1px solid var(--dark-blue);
+  }
+  
+  .password-input {
+    position: relative;
+  }
+  
+  .fa-eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    height: 46px;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    border-radius: var(--radius-xs);
+    background-color: var(--dark-blue);
+    padding: 10px;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: #5787e9;
+  }
+
+@media screen and (max-width : 400px) {
+    .form {
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+    }
+}
