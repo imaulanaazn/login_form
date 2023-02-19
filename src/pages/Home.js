@@ -1,7 +1,14 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Home() {
   return (
-    <div>This is Home</div>
+    <div className='container'>
+    <div>This is My Study Case for Front End</div>
+    <ul className='cases'>
+        <li><Link to="/form">login form</Link></li>
+        <li><Link to="/pagination-table">Table with pagination</Link></li>
+    </ul>   
+    </div>
   )
 }
