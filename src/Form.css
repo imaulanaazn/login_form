@@ -76,7 +76,7 @@
     color: var(--dark-blue);
     background-color: white;
     font-size: 13px;
-}
+  }
   
   .form-group input.filled ~ label,
   .form-group select.filled ~ label {
@@ -86,10 +86,11 @@
     color: var(--light-gray);
     font-size: 13px;
     background-color: white;
-}
-
-.form-group input.filled:focus ~ label,
-.form-group select.filled:focus ~ label {
+  }
+  
+  .form-group input.filled:focus ~ label,
+  .form-group select.filled:focus ~ label {
+    background-color: white;
     color: var(--dark-blue);
 }
 
