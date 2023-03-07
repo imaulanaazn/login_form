@@ -1,7 +1,50 @@
 import React from 'react'
 import '../styles/Payment.css'
+import { useState } from 'react';
+import axios from 'axios'
+import StripeCheckout from 'react-stripe-checkout';
 
 export default function Payment() {
+    const publishableKey =
+    'pk_test_51KAs34JBPfp3exDP5KZ00E3s265wlWQ2O3pKoxEWxuOhzpsfVTqZ3qPMgtLweUqwbmabFS1xrTboUY6MxEAMsBOG00pmyBOyR8';
+  const [product, setProduct] = useState({
+    name: 'Headphone',
+    price: 5,
+  });
+  const priceForStripe = product.price * 100;
+
+  const handleSuccess = () => {
+    console.log({
+      icon: 'success',
+      title: 'Payment was successful',
+      time: 4000,
+    })
+  };
+  const handleFailure = () => {
+    console.log({
+      icon: 'error',
+      title: 'Payment was not successful',
+      time: 4000,
+    });
+  };
+  const payNow = async token => {
+    try {
+      const response = await axios({
+        url: 'http://localhost:5000/payment',
+        method: 'post',
+        data: {
+          amount: product.price * 100,
+          token,
+        },
+      });
+      if (response.status === 200) {
+        handleSuccess();
+      }
+    } catch (error) {
+      handleFailure();
+      console.log(error);
+    }
+  };
   return (
     <div class="payment-container">
 
@@ -83,6 +126,16 @@ export default function Payment() {
 
     </form>
 
+    <StripeCheckout
+        stripeKey={publishableKey}
+        label="Pay Now"
+        name="Pay With Credit Card"
+        billingAddress
+        shippingAddress
+        amount={priceForStripe}
+        description={`Your total is $${product.price}`}
+        token={payNow}
+      />
 </div>    
   )
 }

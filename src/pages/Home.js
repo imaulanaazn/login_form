@@ -9,6 +9,7 @@ export default function Home() {
         <li><Link to="/form">login form</Link></li>
         <li><Link to="/pagination-table">Table with pagination</Link></li>
         <li><Link to="/payment">payment</Link></li>
+        <li><Link to="/dropdown">dropdown</Link></li>
     </ul>   
     </div>
   )

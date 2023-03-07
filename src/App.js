@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Form from "./pages/Form";
 import PaginationTable from "./pages/PaginationTable";
 import Payment from "./pages/Payment";
+import Dropdown from "./pages/Dropdown";
 
 const App = () => {
    return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/form" element={<Form />} />
         <Route path="/pagination-table" element={<PaginationTable />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/dropdown" element={<Dropdown />} />
       </Routes>
    );
 };
