@@ -14,8 +14,7 @@
       cursor: pointer;
   }
 
-body{
-    margin: 100px;
+.region-select-container{
     --light-gray: rgb(236, 236, 236);
     --dark-gray: rgb(219, 219, 219);
     --font-dark-gray: rgb(36, 36, 36);
@@ -23,11 +22,12 @@ body{
 }
 
 .region-select-container{
+    margin: 100px;
     display: flex;
     gap: 10px;
 }
 
-.region-state{
+.region-select-container .region-state{
     padding: 20px 10px;
     border-radius: 4px;
     display: flex;
@@ -38,7 +38,7 @@ body{
     background-color: var(--light-gray);
 }
 
-.region-state .state-btn{
+.region-select-container .region-state .state-btn{
     background-color: var(--light-gray);
     border-radius: 4px;
     display: inline-block;
@@ -48,16 +48,16 @@ body{
     color: var(--font-light-gray);
 }
 
-.region-state .state-btn:hover{
+.region-select-container .region-state .state-btn:hover{
     cursor: pointer;
 }
 
-.region-state .state-btn.active{
+.region-select-container .region-state .state-btn.active{
     background-color: var(--dark-gray);
     color: var(--font-dark-gray);
 }
 
-.state-city{
+.region-select-container .state-city{
     padding: 10px 10px;
     border-radius: 4px;
     background-color: var(--light-gray);
@@ -65,7 +65,7 @@ body{
     overflow-y: scroll;
 }
 
-.input__group{
+.region-select-container .input__group{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -74,19 +74,19 @@ body{
 }
 
 
-.input__group input:hover, label:hover{
+.region-select-container .input__group input:hover, label:hover{
     cursor: pointer;
 }
 
-.input__group input{
+.region-select-container .input__group input{
     width: 15px;
     height: 15px;
 }
 
-.input__group label{
+.region-select-container .input__group label{
     color: var(--font-light-gray)
 }
 
-.input__group input:checked ~ label{
+.region-select-container .input__group input:checked ~ label{
     color: var(--font-dark-gray)
 }

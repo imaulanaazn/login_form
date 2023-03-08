@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Payment.css'
+import './index.css'
 import { useState } from 'react';
 import axios from 'axios'
 import StripeCheckout from 'react-stripe-checkout';

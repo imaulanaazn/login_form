@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import {data} from '../dummy'
-import '../styles/dropdown.css'
+import {data} from '../../dummy'
+import './index.css'
 
 export default function Dropdown() {
     const [stateName,setActiveState] = useState('');

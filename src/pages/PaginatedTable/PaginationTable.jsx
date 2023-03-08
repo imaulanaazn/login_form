@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
-import "../styles/PaginationTable.css";
+import "./index.css";
 
 const PaginationTable = () => {
   const [tableData, setTableData] = useState([]);
