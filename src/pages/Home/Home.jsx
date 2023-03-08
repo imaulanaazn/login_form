@@ -4,10 +4,10 @@ import GalleryCard from '../../components/GalleryCard'
 
 export default function Home() {
   return (
-    <div className='container mx-auto py-20'>
-      <div className='header flex justify-between items-center'>
+    <div className='container mx-auto md:py-20 py-10 md:px-0 px-5'>
+      <div className='header md:flex justify-between items-center'>
             <h1 className='text-4xl font-bold text-slate-800'>#Case Study for <span className='text-violet-500'>Front-End</span></h1>
-            <div class="search-container relative w-96 max-w-lg ml-auto">
+            <div class="search-container relative md:w-96 w-full max-w-lg ml-auto md:mt-0 mt-10">
                 <div class="flex justify-between overflow-hidden rounded-full bg-white shadow shadow-black/20">
                   <input type="text" class="block w-full flex-1 py-2 px-5 focus:outline-none" placeholder="Start Typing..." />
                   <span class="m-1 inline-flex cursor-pointer items-center rounded-full bg-violet-500 px-2 py-2 hover:bg-indigo-700">
