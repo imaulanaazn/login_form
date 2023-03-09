@@ -7,6 +7,7 @@ import StripeCheckout from 'react-stripe-checkout';
 export default function Payment() {
     const publishableKey =
     'pk_test_51KAs34JBPfp3exDP5KZ00E3s265wlWQ2O3pKoxEWxuOhzpsfVTqZ3qPMgtLweUqwbmabFS1xrTboUY6MxEAMsBOG00pmyBOyR8';
+  // eslint-disable-next-line no-unused-vars
   const [product, setProduct] = useState({
     name: 'Headphone',
     price: 5,

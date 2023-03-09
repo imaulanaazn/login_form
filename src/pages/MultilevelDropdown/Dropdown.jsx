@@ -4,7 +4,6 @@ import './index.css'
 
 export default function Dropdown() {
     const [stateName,setActiveState] = useState('');
-    const [isChanged,setIsChanged] = useState(false)
     const [stateData,setStateData] = useState(data)
     
     function handleStatusChange(stateName, index) {
@@ -16,6 +15,7 @@ export default function Dropdown() {
         // Update the state with the new data object
         setStateData(newData);
       }
+
     
   return (
     <div  className='region-select-container'>
@@ -37,7 +37,7 @@ export default function Dropdown() {
         {stateName ? 
         data[stateName].map((city,i) => {
             return(
-                <div className={`input__group ${city["status"] === "selected" ? "checked" : ""}`} onChange={()=>{setIsChanged(true)}}>
+                <div className={`input__group ${city["status"] === "selected" ? "checked" : ""}`}>
                     <input type="checkbox" checked={city["status"] === "selected" ? true :false} id={'city-'+i} 
                     onChange={()=>{handleStatusChange(stateName, i)}}
                     /> 
