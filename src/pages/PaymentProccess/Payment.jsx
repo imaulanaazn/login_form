@@ -93,7 +93,7 @@ export default function Payment() {
 
                 <div class="inputBox">
                     <span>cards accepted :</span>
-                    <img src="/card_img.png" alt="" />
+                    <img src="../assets/images/card_img.png" alt="" />
                 </div>
                 <div class="inputBox">
                     <span>name on card :</span>

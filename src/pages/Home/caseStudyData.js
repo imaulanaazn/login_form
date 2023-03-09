@@ -2,25 +2,25 @@ export const caseStudies = [
     {
         name: "Login Form",
         id: 1,
-        img: "",
-        link: "/form"
+        img: "case1.png",
+        url: "/form"
     },
     {
         name: "Table With Pagination",
         id: 2,
-        img: "",
-        link: "/pagination-table"
+        img: "case2.png",
+        url: "/pagination-table"
     },
     {
         name: "Stripe Payment",
         id: 3,
-        img: "",
-        link: "/payment"
+        img: "case3.png",
+        url: "/payment"
     },
     {
         name: "Multilevel Dropdown",
         id: 4,
-        img: "",
-        link: "/dropdown"
+        img: "case4.png",
+        url: "/dropdown"
     }
 ]
