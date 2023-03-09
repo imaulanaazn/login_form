@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom"
 
 export default function GalleryCard(props) {
-  const {name,id,img,url} = props.data
+  const {name,img,url} = props.data
   console.log(props)
   return (
     <Link to={`http://localhost:3000${url}`}>
