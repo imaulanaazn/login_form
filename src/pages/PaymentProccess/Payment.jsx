@@ -1,12 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+const ROOT_URL = process.env.REACT_ROOT_URL
 
 export default function Payment() {
 
     const navigate = useNavigate()
 
 const checkout = async () => {
-  await fetch("http://localhost:4000/create-checkout-session", {
+  await fetch(`${ROOT_URL}/stripe-payment/create-checkout-session`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -23,7 +24,8 @@ const checkout = async () => {
       return res.json().then(json => Promise.reject(json))
     })
     .then(({ url }) => {
-        navigate(url)
+      console.log(url)
+        window.location = url
     })
     .catch(e => {
       console.error(e.error)
