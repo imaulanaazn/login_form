@@ -1,11 +1,7 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
-const ROOT_URL = process.env.REACT_ROOT_URL
 
 export default function Payment() {
-
-    const navigate = useNavigate()
-
+  const ROOT_URL = 'http://localhost:4000'
 const checkout = async () => {
   await fetch(`${ROOT_URL}/stripe-payment/create-checkout-session`, {
     method: "POST",
